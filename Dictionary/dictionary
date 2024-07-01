@@ -1,0 +1,90 @@
+# dict={'a':100,'b':200,'c':300}
+# sum=0
+# for dicts in dict.values():
+#     sum = sum+dicts
+# print(sum)
+
+# dict={'a':100,'b':200,'c':300}
+# print(len(dict))
+
+# string="Python is great and Java is also great"
+# print(' '.join(dict.fromkeys(string.split())))
+
+
+# dicts={'a':100,'b':400,'c':200}
+# sort=dict(sorted(dicts.items(), key=lambda item:item[1]))
+# print(sort)
+
+# dicts={'a':100,'b':400,'c':200}
+# sort=dict(sorted(dicts.items(), key=lambda item:item[1], reverse=True))
+# print(sort)
+
+# dict1={
+#     'a':100,
+#     'b':400,
+#     "dict2" : {
+#         'c':200,
+#     },
+#     "dict3" : {
+#         'd':300,
+#     }
+# }
+
+# print(dict1["dict2"] ["c"])
+
+# dict1["dict2"]['c'] = 400
+# print(dict1["dict2"] ["c"])
+
+# dicts={'a':100 , 'b':200, 'c':300, 'd':500}
+# dict1='c'
+# for a in dicts.keys():
+#     if a == dict1:
+#         print("Already exists")
+
+# dicts={'a':100 , 'b':200, 'c':300, 'd':500}
+# dict1={'e':600 , 'f':700, 'g':800, 'h':900}
+# dicts.update(dict1)
+# print(dicts)
+
+# dicts={'a':100 , 'b':200, 'c':300, 'd':500}
+# for a,b in dicts.items():
+#     print(a,b)
+
+# List = [1, 2, 2, 3, 4, 1, 4, 5, 5, 6, 7, 7]
+# list1 = {}
+# count=0
+# for i in List:
+#     if i in list1:
+#         list1[i] += 1
+#     else:
+#         list1[i] = 1
+# print(list1)
+
+# dicts={'a':100, 'b':300, 'c':200, 'd':400}
+# maxitem=next(iter(dicts))
+# minitem=next(iter(dicts))
+# for i in dicts:
+#     if dicts[i]>dicts[maxitem]:
+#         maxitem=i
+#     elif dicts[i]<dicts[minitem]:
+#         minitem=i
+# print(maxitem)
+# print(minitem)
+
+# dict={'a':100 , 'b':200, 'c':{} ,'d':400, 'e':[]}
+# cleaned = {}
+# for a,b in dict.items():
+#     if b:
+#         cleaned[a]=b
+# print(cleaned)
+
+dicts={1:3, 2:4, 3:5, 4:6}
+add=[]
+for a in dicts:
+   add.append(a + dicts[a])
+print(add)
+
+
+# dicts={'1':3, '2':4, '3':5, '4':6}
+# converted=list(dicts.items())
+# print(converted)

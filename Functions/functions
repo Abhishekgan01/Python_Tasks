@@ -1,0 +1,150 @@
+#Area of a Rectangle
+def calculate(l,w):
+    return l*w
+
+length=int(input("Enter the length:"))
+breadth = int(input("Enter the width:"))
+print(calculate(length,breadth))
+
+#Accepts a list of integers and returns sum of all elements
+def sum(list):
+    sum=0
+    for i in list:
+        sum+=i
+    return sum
+
+list=[1,2,3,4,5]
+print(sum(list))
+
+#Overloading method for calling different functions according to input
+def print_data(data):
+    
+    if isinstance(data, int):
+        print("Integer:", data)
+    elif isinstance(data, float):
+        print("Double: ", data)  
+    elif isinstance(data, str):
+        print("String:", data)
+    else:
+        print("Unsupported data type")
+
+print_data(10)  
+print_data(3.14)  
+print_data("Hello, World!")  
+
+#Multiplication table for a given number
+def multiplication(n):
+    for i in range(1,n+1):
+        ans=n*i
+        print(n,"*",i,"=",ans)
+
+n=int(input("Enter a number:"))
+multiplication(n)
+
+#Counting the number of digits
+def count(n):
+    counter=0
+    for i in n:
+        counter+=1
+    return counter
+
+int=input("Enter a number to count its digits:")
+ans=count(str(int))
+print(ans)
+
+#Calculating whether its a prime for given number
+def prime_check(n):
+    count=0
+    for i in range(1,n+1):
+        if n%i==0:
+            count+=1
+    result = "Prime number" if count==2 else "Not a Prime number"
+    return result
+
+n=int(input("Enter a number:"))
+print(prime_check(n))
+
+#Calculating prime number upto a given range
+def prime_check(n):
+    list=[]
+    for i in range(2,n+1):
+        count=0
+        for j in range(1,i+1):
+            if i%j==0:
+                count+=1
+        if count==2:
+            list.append(i)
+    return list
+    
+
+n=int(input("Enter a number:"))
+print(prime_check(n))
+
+#Factorial of a number
+def factorial(n):
+    fact=1
+    for i in range(1,n+1):
+        fact=fact*i
+    return fact
+
+n=int(input("Enter a number:"))
+print(factorial(n))
+
+#Fibonacci series(Method 1)
+def fibonacci_series(n):
+    first=0
+    second=1
+    for i in range(3,n+1):
+        third=first+second
+        first=second
+        second=third
+    return third
+
+n=int(input("Enter a number to find its fibonacci term:"))
+print(fibonacci_series(n))
+
+#Fibonacci series(Method 2)
+def fibonacci_series(n):
+    if n== 0:
+        return 0
+    elif n==1 or n==2 :
+        return 1
+    else:
+        return fibonacci_series(n-1) +  fibonacci_series(n-2)
+
+n=int(input("Enter a number to find its fibonacci term:"))
+print(fibonacci_series(n))
+
+#Calling relevant function based on the operation given
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Error! Division by zero."
+
+
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operation = input("Enter the operation (add/subtract/multiply/divide): ")
+
+if operation == 'add':
+    result = add(num1, num2)
+elif operation == 'subtract':
+    result = subtract(num1, num2)
+elif operation == 'multiply':
+    result = multiply(num1, num2)
+elif operation == 'divide':
+    result = divide(num1, num2)
+else:
+    result = "Invalid operation!"
+
+print("The result is:", result)
