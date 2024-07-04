@@ -48,8 +48,8 @@ def count(n):
         counter+=1
     return counter
 
-int=input("Enter a number to count its digits:")
-ans=count(str(int))
+input=input("Enter a number to count its digits:")
+ans=count(str(input))
 print(ans)
 
 #Calculating whether its a prime for given number
@@ -148,3 +148,9 @@ else:
     result = "Invalid operation!"
 
 print("The result is:", result)
+
+class add:
+    pass
+
+add1=add()
+isinstance(add,add1)

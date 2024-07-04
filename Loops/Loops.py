@@ -1,4 +1,4 @@
-#1.Print from 1 to 10
+#1.Print from 1 to num
 num=int(input("Enter a number:"))
 for i in range(1,num+1):
     print (i)
@@ -19,7 +19,7 @@ for i in range(1,num+1):
     else:
         print(i)
 
-#Sum of all numbers from 1 to 10
+#Sum of all numbers from 1 to num
 num=int(input("Enter a number:"))
 sum=0
 for i in range(1,num+1):
@@ -34,7 +34,8 @@ while True:
 
 """
 Print the following pattern using loops
-		1 
+
+1 
 2 2 
 3 3 3 
 4 4 4 4

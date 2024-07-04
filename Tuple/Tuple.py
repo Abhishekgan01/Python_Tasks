@@ -2,7 +2,7 @@
 tuple=(1,2,3,4)
 print(len(tuple).to_bytes)
 
-#Pg to print the element and its cude in list of tuple
+#Pg to print the element and its cube in list of tuple
 list1=[]
 list2=[]
 ele=int(input("Enter the no of elements:"))
@@ -10,7 +10,7 @@ for i in range(0,ele):
     x=int(input("Enter the element:"))
     list2.append(x)
     list1.append(pow(x,3))
-data=list(zip(list2,list1))
+data=list(zip(list2,list1)) 
 print(data)
 
 #Adding tuple to List and Vice Versa

@@ -2,7 +2,7 @@
 lst = []
 n = int(input("Enter number of elements : "))
 for i in range(0, n):
-    ele = (input("Enter the element : "))
+    ele = input("Enter the element : ")
     lst.append(ele)
 search = input("Enter the element to search:")
 if search in lst:
@@ -12,7 +12,7 @@ else:
 
 #Swap first and second
 ele=[10,20,"hello",5]
-ele[0],ele[len(ele)-1] = ele[len(ele)-1],ele[0]
+ele[0],ele[-1] = ele[-1],ele[0]
 print(ele)
 
 #Length
