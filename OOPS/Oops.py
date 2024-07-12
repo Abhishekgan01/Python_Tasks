@@ -47,6 +47,11 @@ class Calculator:
 
 a=int(input("Enter number 1:"))
 b=int(input("Enter number 2:"))
+obj=Calculator(a,b)
+print(obj.add())
+print(obj.subtract())
+print(obj.multiplication())
+print(obj.division())
 
 
 #Write a Python program to create a class that represents a shape. Include methods to calculate its area and perimeter. Implement subclasses for different shapes like circle, triangle, and square.

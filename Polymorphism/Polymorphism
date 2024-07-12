@@ -1,0 +1,21 @@
+# #Create a parent class and child class. Create a function called print in both the classes to observe method overriding
+# class Parent:
+#     def print(self):
+#         print("This is from parent class")
+
+# class Child(Parent):
+#     def print(self):
+#         super().print()
+
+# obj=Child()
+# obj.print()
+
+class Parent:
+    def print(self):
+        print("This is from parent class")
+
+class Child(Parent):
+    pass
+
+obj=Child()
+obj.print()

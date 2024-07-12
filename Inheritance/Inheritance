@@ -1,0 +1,52 @@
+#Create a child class Bus that will inherit all of the variables and methods of the Vehicle class
+class Vehicle:
+    name="Vehicle"
+    model="2000"
+    wheel=4
+
+    def print(self):
+        print("Vehicle name:{}, Model:{}, wheel:{}".format(self.name,self.model,self.wheel))
+
+class Bus(Vehicle):
+    name="Bus"
+    model="2001"
+    wheel=6
+
+veh=Bus()
+veh.print()
+
+#Create a parent class A, Child class B, Grand Child class C. Use Child C object to access the instance variable and methods of class A
+class A:
+    name="A"
+    def printA(self):
+        print("A name:{}".format(self.name))
+
+class B(A):
+    name="B"
+    def printB(self):
+        print("B name:{}".format(self.name))
+
+class C(B):
+    name="C"
+    def printC(self):
+        print("C name:{}".format(self.name))
+
+obj=C()
+obj.printA()
+
+#Create a class A and class B. Create class C that inherits from class A and B. use object of class C to inherit methods from both class A and class B
+class A:
+    name="A"
+    def print(self):
+        print("A name:{}".format(self.name))
+
+class B:
+    name="B"
+    def print(self):
+        print("B name:{}".format(self.name))
+
+class C(A,B):
+    name="C"
+
+obj=C()
+obj.print()
