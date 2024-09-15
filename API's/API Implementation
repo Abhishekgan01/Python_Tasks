@@ -65,8 +65,8 @@ def deleteobject(id):
 response = createObject().json()
 id = response['id']
 print("id ",id)
-print("create response ",createObject().json())
+# print("create response ",createObject().json())
 print("get response ",getAllObjects())
-print("get response ",getObjectById(id))
-print("Put response",putObject(id))
-print("Delete Response",deleteobject(id))
+# print("get response ",getObjectById(id))
+# print("Put response",putObject(id))
+# print("Delete Response",deleteobject(id))

@@ -56,14 +56,18 @@ print(obj.division())
 
 #Write a Python program to create a class that represents a shape. Include methods to calculate its area and perimeter. Implement subclasses for different shapes like circle, triangle, and square.
 import math
+from abc import ABC,abstractmethod
+class Shape(ABC):
 
-class Shape:
+    @abstractmethod
     def __init__(self):
         pass
 
+    @abstractmethod
     def area(self):
         pass
 
+    @abstractmethod
     def perimeter(self):
         pass
 
@@ -194,6 +198,7 @@ class ShoppingCart:
         self.items.append(item)
         print(f"Added {quantity} x {item_name} to the cart.")
 
+
     def remove_item(self, item_name, quantity=1):
         for item in self.items:
             if item["name"] == item_name:
@@ -301,5 +306,4 @@ linkedlist.add(3)
 linkedlist.add(4)
 linkedlist.remove(2)
 linkedlist.print()
-
 
